@@ -1,6 +1,6 @@
 %define name zeppoo
 %define version 0.0.4
-%define release %mkrel 1
+%define release %mkrel 3
 %define _requires_exceptions libzeppoo/libzeppoo.so
 
 Summary: Rootkit detection tool
