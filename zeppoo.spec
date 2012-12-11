@@ -1,17 +1,17 @@
-%define name zeppoo
-%define version 0.0.4
-%define release %mkrel 5
+%if %{_use_internal_dependency_generator}
+%define __noautoreq 'libzeppoo/libzeppoo.so'
+%else
 %define _requires_exceptions libzeppoo/libzeppoo.so
+%endif
 
 Summary: Rootkit detection tool
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:    zeppoo
+Version: 0.0.4
+Release: 5
 Source0: http://downloads.sourceforge.net/zeppoo/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Monitoring
 Url: http://www.zeppoo.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Zeppoo allows you to detect rootkits on the i386 architecture under
@@ -48,3 +48,27 @@ rm -rf %{buildroot}
 %{_bindir}/%{name}.real
 %dir %{_libdir}/lib%{name}
 %{_libdir}/lib%{name}/lib%{name}.so
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.0.4-5mdv2010.0
++ Revision: 435378
+- rebuild
+
+* Mon Aug 04 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.0.4-4mdv2009.0
++ Revision: 263015
+- rebuild
+- rebuild
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 0.0.4-1mdv2008.1
++ Revision: 141006
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Fri Aug 10 2007 Olivier Blin <oblin@mandriva.com> 0.0.4-1mdv2008.0
++ Revision: 61049
+- initial (hackish) release
+- Create zeppoo
+
