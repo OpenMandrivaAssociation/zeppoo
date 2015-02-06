@@ -7,7 +7,7 @@
 Summary: Rootkit detection tool
 Name:    zeppoo
 Version: 0.0.4
-Release: 5
+Release: 6
 Source0: http://downloads.sourceforge.net/zeppoo/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Monitoring
