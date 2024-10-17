@@ -11,7 +11,7 @@ Release: 6
 Source0: http://downloads.sourceforge.net/zeppoo/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Monitoring
-Url: http://www.zeppoo.net/
+Url: https://www.zeppoo.net/
 
 %description
 Zeppoo allows you to detect rootkits on the i386 architecture under
