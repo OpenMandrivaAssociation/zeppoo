@@ -13,6 +13,7 @@ License: GPL
 Group: Monitoring
 Url: https://www.zeppoo.net/
 
+BuildRequires:	make
 %description
 Zeppoo allows you to detect rootkits on the i386 architecture under
 Linux by using /dev/kmem and /dev/mem. It can also detect hidden
